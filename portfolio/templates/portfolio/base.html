@@ -1,0 +1,104 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="{% static "portfolio/custom.css" %}">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="{% static "portfolio/Logo.png" %}">
+
+  <title>huzaifa zahoor</title>
+</head>
+
+<body>
+
+  <nav id="topNav" class="navbar navbar-expand-md navbar-light">
+    <div class="container">
+      <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="{% static "portfolio/Logo.png" %}" width="30" height="30" class="d-inline-block align-top" alt="Nick's Logo">
+        <span>huzaifa zahoor</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% static "portfolio/EchZee-v5.pdf" %}">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/huzaifazahoor654" target="_blank">LinkedIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/huzaifazahoor" target="_blank">Github</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+  {% block content %}{% endblock %}
+  </div>
+
+  <div class="container">
+	<h2 class = "mt-5">Contact</h2>
+	<hr>
+	<div class="row">
+		<div class="col-6">
+			<h4>Do you have any projects? Let's talk</h4>
+			<h5>Email: </h5>
+			<p>huzaifazahoor654@gmail.com</p>
+			<h5>Phone#: </h5>
+			<p>+92-332-575-8954</p>
+			<h5>Skype: </h5>
+			<p>live:huzaifazahoor654</p>
+		</div>
+  	
+
+  		<div class="col-5">
+			<h5 class="text-uppercase">Social Media</h5>
+
+                <ul class="list-unstyled">
+                  <li>
+                  	<a href="https://www.facebook.com/huzaifa.zahoor.10" class="fa fa-facebook">Facebook</a>
+                  </li>
+                  <br>
+                  <li>
+                    <a href="https://www.twitter.com/huzaifazahoor2" class="fa fa-twitter">Twitter</a>
+                  </li>
+                  <br>
+                  <li>
+                  	<a href="https://www.instagram.com/huzaifazee/" class="fa fa-instagram">Instagram</a>
+                  </li>
+                </ul>
+		</div>
+	</div>
+
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="huzaifazahoor.com"> huzaifazahoor.com</a>
+          </div>
+          <!-- Copyright -->  	
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+
+</html>
